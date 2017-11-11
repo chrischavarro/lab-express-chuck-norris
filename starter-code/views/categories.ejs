@@ -1,3 +1,10 @@
-  <body>
-    <h1>Categories</h1>
-  </body>
+<h1>Categories</h1>
+<ul>
+  <% categories.forEach((category) => { %>
+    <li>
+      <a href='?cat=<%= category %>'>
+        <%= category.toUpperCase() %>
+      </a>
+    </li>
+  <% }) %>
+</ul>
